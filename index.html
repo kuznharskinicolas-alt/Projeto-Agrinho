@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#pilares">Pilares</a>
+            <a href="#calculadora">Simulador</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro é o Futuro do Brasil</h1>
+            <p>A União da Tecnológia e a Agronomia para um Mundo mais Harmônico entre a Sociedade e a Natureza</p>
+            <a href="#calculadora" class="btn">Simule seu Impacto</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="pilares">
+        <h2>Nossos Pilares para um Futuro Melhor</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Tecnologia nas Lavouras</h3>
+                <p>Uso de drones, IoT e IA para monitorar lavouras, reduzindo o desperdício de água e insumos e controlar as pragas que invadem.</p>
+            </div>
+            <div class="card">
+                <h3>Preservação</h3>
+                <p>Práticas de rotação de culturas e plantio direto que mantêm a saúde do solo e protegem biomas do desmatamento.</p>
+            </div>
+            <div class="card">
+                <h3>Energia Limpa</h3>
+                <p>Implementação de painéis solares e biomassa para mover as fazendas com zero emissão de carbono assim deixando o ar que respiramos mais limpo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="calculadora-section">
+        <h2>Simulador de Sustentabilidade</h2>
+        <p>Insira o tamanho da sua propriedade (em hectares) para estimar o impacto do plantio direto na retenção de água e carbono.</p>
+        
+        <div class="calc-form">
+            <input type="number" id="hectares" placeholder="Quantidade de hectares (ex: 50)" min="1">
+            <button onclick="calcularImpacto()">Calcular Impacto</button>
+        </div>
+
+        <div id="resultado" class="resultado hidden">
+            <h3>Resultado Estimado por Ano:</h3>
+            <p>💧 <strong>Água economizada:</strong> <span id="agua-resultado">0</span> litros</p>
+            <p>🌱 <strong>CO₂ retido no solo:</strong> <span id="carbono-resultado">0</span> kg</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável. Cultivando a tecnologia, colhendo o amanhã.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
